@@ -15,7 +15,7 @@ io.on("connection", (socket) => {
         fs.appendFileSync("./public/history.txt", data.username + ": " + data.message + "<br/><br/>");
     });
 });
-const PORT = process.env.PORT || 3000;
-server.listen(app.get('port'), () => {
-    console.log(`listening on *:${PORT}`);
+
+server.listen(process.env.PORT || 5000, () => {
+    console.log(`listening on *:${process.env.PORT || 5000}`);
 });
