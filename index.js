@@ -16,6 +16,6 @@ io.on("connection", (socket) => {
     });
 });
 
-server.bind(app.get('port'), () => {
+server.listen(app.get('port'), () => {
     console.log("listening on *:3000");
 });
