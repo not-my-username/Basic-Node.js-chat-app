@@ -26,18 +26,6 @@ scoket.on("message", (message) => {
 
 })
 
-// const Http = new XMLHttpRequest();
-// const url = window.location.href + "history.txt";
-// Http.open("GET", url);
-// Http.onreadystatechange = (e) => {
-//     if (Http.readyState == 4) {
-//         document.getElementById("history").innerHTML = "<br/>" + Http.responseText
-//         window.scrollTo(0, document.body.scrollHeight);
-//     }
-// }
-
-// Http.send()
-
 document.addEventListener("keydown", event => {
     if (event.key == "Enter") {
         send()
